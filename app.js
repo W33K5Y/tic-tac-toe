@@ -29,26 +29,15 @@ for (prop of mainDiv.children) {
     prop.addEventListener('click',addSVGs);
 }
 
-
+// ! this adds the circles and croses in player order and then removes the listener on the specific el 
 function addSVGs(e) {
     whosGo ++;
-    if(this.id % 2 === 0) {
+    if(whosGo % 2 === 0) {
       this.innerHTML = circle;
+      this.removeEventListener("click",addSVGs);
      } else{
       this.innerHTML = cross;
+      this.removeEventListener("click",addSVGs);
     } 
- removeEventListener('click',addSVGs);
 
 }
-
-// ! ^^^ just cant quite get the above function to only fire once on each div 
-// function addSVGs(e) {
-//     this.firstElementChild.classList = "cross";
-//     this.firstElementChild.nextElementSibling.classList = "circle-display";
-//     whosGo ++;
-//     if(whosGo % 2 === 0) {
-//            this.firstElementChild.classList = "cross-display";
-//            this.firstElementChild.nextElementSibling.classList = "circle";            
-//         }
-      
-//     }
