@@ -1,0 +1,68 @@
+/* ! Global selectors */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px #000;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  background-color: rgb(2, 1, 16);
+  padding: 7.65rem;
+  max-height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+/* ! main section */
+main {
+  /* height: 100%; */
+  background-color: #02bda4;
+  padding: 10rem;
+  position: relative;
+}
+#main-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  width: 57.6rem;
+  margin: 10rem auto;
+  padding: 5rem 5rem 0rem 5rem;
+}
+#main-wrap div {
+  height: 15rem;
+  width: 15rem;
+  background-color: #bd8802;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* !  SVG's */
+.cross {
+  fill: #bd026c;
+  width: 70px;
+  display: initial;
+}
+.circle-display {
+  display: none;
+}
+.cross-display {
+  display: none;
+}
+.circle {
+  fill: white;
+  width: 70px;
+  display: initial;
+}
