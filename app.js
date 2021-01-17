@@ -22,6 +22,7 @@ function addSVGs(e) {
      this.firstElementChild.nextElementSibling.classList === "circle") {
        console.log('testy') 
     }
+    // ! I cant get this function to only fire once on each individual section div so that once a circle or cross is chosen you cant change it
       
 
 }
