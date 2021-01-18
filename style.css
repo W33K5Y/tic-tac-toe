@@ -7,28 +7,31 @@
 }
 html {
   font-size: 62.5%;
+  font-family: "Potta One", cursive;
+  /* contain: content; */
 }
 
 h1 {
-  font-size: 5rem;
+  font-size: 7.5rem;
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #000;
-  font-family: "Potta One", cursive;
-  letter-spacing: 1.25rem;
+  letter-spacing: 2.25rem;
+  text-align: center;
 }
 nav {
   background-color: rgb(189, 2, 108);
   padding: 7.65rem;
-  max-height: 10vh;
+  min-height: 10vh;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 /* ! main section */
 main {
   /* height: 100%; */
   background-color: #02bda4;
-  padding: 10rem;
+  padding: 23rem 0 23rem 0;
   position: relative;
 }
 #main-wrap {
@@ -67,4 +70,82 @@ main {
   fill: white;
   width: 70px;
   display: initial;
+}
+
+/* ! Start Div */
+.header-display-none {
+  display: none;
+}
+.header-display-show {
+  display: initial;
+}
+
+.start,
+.end {
+  height: 100vh;
+  width: 100%;
+  background-color: #bd026c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#start-h1,
+#end-h1 {
+  padding-bottom: 5rem;
+  color: white;
+  text-shadow: 2px 2px 5px #000;
+}
+#start-button,
+#end-button {
+  padding: 1.4rem;
+  background-color: #02bda4;
+  color: white;
+  letter-spacing: 0.2rem;
+  text-shadow: 2px 2px 5px #000;
+  font-size: 2.2rem;
+  font-family: "Potta One", cursive;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px #656f6e;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+#start-button:hover,
+#end-button:hover {
+  transform: scale(1.1);
+}
+
+.end-display-none {
+  display: none;
+}
+.end-display-show {
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  #main-wrap {
+    height: 100%;
+    width: 57.6rem;
+    margin: 8rem auto;
+    padding: 2rem 5rem 0rem 2rem;
+  }
+  #main-wrap div {
+    height: 9rem;
+    width: 9rem;
+    margin-top: 1rem;
+  }
+  nav {
+    padding: 0rem;
+  }
+  h1 {
+    font-size: 6.5rem;
+  }
+  main {
+    display: flex;
+  }
 }
