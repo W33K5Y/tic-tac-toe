@@ -1,4 +1,5 @@
 /* ! Global selectors */
+/* Posible nav color rgb(2, 1, 16) */
 * {
   margin: 0;
   padding: 0;
@@ -11,11 +12,12 @@ html {
 h1 {
   font-size: 5rem;
   color: rgb(255, 255, 255);
-  text-shadow: 1px 1px 3px #000;
-  font-family: "Poppins", sans-serif;
+  text-shadow: 2px 2px 5px #000;
+  font-family: "Potta One", cursive;
+  letter-spacing: 1.25rem;
 }
 nav {
-  background-color: rgb(2, 1, 16);
+  background-color: rgb(189, 2, 108);
   padding: 7.65rem;
   max-height: 10vh;
   display: flex;
