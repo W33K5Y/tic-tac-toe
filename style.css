@@ -12,7 +12,7 @@ html {
 }
 
 h1 {
-  font-size: 7.5rem;
+  font-size: calc(7.5rem + 1vw);
   color: rgb(255, 255, 255);
   text-shadow: 2px 2px 5px #000;
   letter-spacing: 2.25rem;
@@ -31,7 +31,7 @@ nav {
 main {
   /* height: 100%; */
   background-color: #02bda4;
-  padding: 23rem 0 23rem 0;
+  padding: 5rem 0 5rem 0;
   position: relative;
 }
 #main-wrap {
@@ -127,25 +127,36 @@ main {
   display: flex;
 }
 
-@media (max-width: 800px) {
-  #main-wrap {
-    height: 100%;
-    width: 57.6rem;
-    margin: 8rem auto;
-    padding: 2rem 5rem 0rem 2rem;
+@media (max-width: 550px) {
+  html {
+    font-size: 58.5%;
   }
   #main-wrap div {
-    height: 9rem;
-    width: 9rem;
-    margin-top: 1rem;
+    height: calc(10rem - 1vw);
+    width: calc(10rem - 1vw);
+  }
+  #main-wrap {
+    width: 55.6rem;
+    margin: 1rem auto;
+    padding: calc(12rem + 1vw);
+  }
+}
+@media (min-width: 320px) and (max-width: 510px) {
+  html {
+    font-size: 56.5%;
+  }
+  #main-wrap div {
+    height: calc(7rem - 1vw);
+    width: calc(7rem - 1vw);
+  }
+  #main-wrap {
+    max-width: 33.6rem;
+    padding: calc(5rem + 1vw);
   }
   nav {
-    padding: 0rem;
+    padding: 0;
   }
   h1 {
-    font-size: 6.5rem;
-  }
-  main {
-    display: flex;
+    font-size: 5.95rem;
   }
 }
